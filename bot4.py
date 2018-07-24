@@ -73,7 +73,7 @@ async def on_reaction_add(reaction, user):
     if reaction.emoji == "🔑" and msg.id == msg_id: #and user == msg_user:
      role = discord.utils.find(lambda r: r.name == "Residente", msg.server.roles)
      await client.add_roles(user, role)
-     print("add")
+     print("Testando nome do User: " + msg_user " e quem clicou? " + user)
 
     if reaction.emoji == "🎵" and msg.id == msg_id: #and user == msg_user:
      role = discord.utils.find(lambda r: r.name == "DJ", msg.server.roles)
